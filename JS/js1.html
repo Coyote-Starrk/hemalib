@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- 
+1-1
+	JavaScript是一种基于对象和事件驱动的客户端脚本语言，最初的设计是为了检验HTML表单输入的正确性，起源于Netscape公司的Livescript语音
+
+	可以在head火body标签中使用《script》嵌入JavaScript脚本
+
+	1.掌握JS的注释与分号
+	2.掌握JS语法
+	3.掌握标识符
+		变量，函数，属性的名字，或者函数的参数
+		命名规则：
+			1.由字母数字下划线或美元符号组成
+			2.不能以数字开头
+			3.不能使用关键字，保留字作为标识符
+	4.掌握什么是变量
+		ECMAscript的变量是松散类型，可以用来保存任何类型的数据
+		换句话说，每个变量仅仅是一个用于保存值的占位符而已。
+	5.掌握变量的声明和赋值
+		变量的声明要是用vaar操作符
+		语法： var 变量名
+		name_01="marry";
+		
+		省略var声明的变量是全局变量
+		不推荐省略var操作符来定义全局变量
+
+3-1
+	1.掌握js数据类型
+
+		5种简单数据类型：Undefined，null，Boolean，Number，String
+		ECMAScript6新增了symbol数据类型
+		复杂数据类型：Object
+
+	2.掌握typeof操作符
+		功能：检测变量类型
+		语法：typeof 变量
+			  typeof（变量）
+		返回值：string类型有可能是，string，number，boolean，object，undefined，function
+	3.掌握Undefined
+	4.掌握null
+		null值表示一个空对象指针
+		如果定义变量准备在将来用于保存对象，那么最好将该变量初始化为null而不是其他值。
+
+		undefined值是派生自null的，所以undefined==null的返回结果是true
+3-3，3-6
+	1.掌握Number
+		表示整数和浮点数
+	2.掌握isNaN()
+		NaN非数值，是一个特殊数值
+		任何涉及NaN的操作（例如NaN/10）都会返回NaN
+		NaN与任何值都不相等，包括NaN本身
+	3.掌握数值转换
+		1.Number（）
+			可以用于任何数据类型
+			转字符串会返回NaN
+		2.parseInt（字符串，进制）
+			可以操作的一定是数字开头
+			会忽略字符串前面的空格，直至找到第一个非空格字符
+		3.parseFloat（）
+
+4-1
+	1.掌握String
+		单引号或者双引号
+
+	2.掌握字符串转换
+		1.String(str)
+		2.str.toString()
+	3.掌握Boolean
+	4.掌握类型转换
+
+5-1
+	1.什么是表达式
+		将同类型的数据（如常量、变量、函数等），用运算符号按一定的规则连接起来的，有意义的式子成为表达式
+	2.掌握JavaScript操作符的分类
+		算数操作符	+ - * / % ++ --
+		逻辑操作符 	&&：与 
+					再有一个操作数不是布尔值的情况下，若第一个操作数隐式转换后为true，则晚会第二个操作数
+
+					若第一个操作数隐式转换后为false，则返回第一个操作数
+
+					如果有一个数是null，nan，undefined，就返回这个值
+
+					 ||：或
+
+					 ！：非 ！！
+
+		赋值操作发 = += -= *= /= %= 
+		三元操作符 条件？代码1：代码2   成立执行1不成立执行2
+		比较操作符 == != === !== 在比较值相等时还要比较类型是否一样
+	3.掌握算数操作符
+
+	 -->
+<!-- JS基础语法 -->
+<!-- 流控制语句 -->
+<!-- 函数 -->
+	<script type="text/javascript">
+		var name_01,age="6",id=parseInt("18px");
+		name_01="marry"; 
+		console.log(typeof(age));
+
+		console.log(id);
+
+		var ids=894819;
+		var idster=String(ids);
+
+		console.log(typeof idster);
+
+		var a=5,b=5,c=5,d="5";
+		console.log(a+b+c+d);
+		console.log(a-b);
+		console.log(a*b);
+		console.log(a/b);
+	</script>
+</body>
+</html>
